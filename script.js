@@ -6,7 +6,7 @@ function m() {
     return r;
 }
 
-if (location.host !== "google.com" || location.pathname.startsWith("/error")) {
+if (location.host !== "google.com" || location.pathname === "/error") {
     location.href = "https://www.google.com/error" + m();
 }
 
